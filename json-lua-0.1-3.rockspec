@@ -1,9 +1,17 @@
+-- This file was automatically generated for the LuaDist project.
+
 
 package = "json-lua"
 version = "0.1-3"
+-- LuaDist source
 source = {
-  url = "git://github.com/jiyinyiyong/json-lua.git"
+  tag = "0.1-3",
+  url = "git://github.com/LuaDist-testing/json-lua.git"
 }
+-- Original source
+-- source = {
+--   url = "git://github.com/jiyinyiyong/json-lua"
+-- }
 description = {
   summary = "JSON encoder/decoder",
   detailed = [[
@@ -16,7 +24,7 @@ dependencies = {
   "lua >= 5.1"
 }
 build = {
-  type = "builtin",
+  type = "module",
   modules = {
     JSON = "JSON.lua"
   }
